@@ -24,6 +24,10 @@ li:hover{
 a:link{
     text-decoration: none;
     display: inline;
+    color: black;
+}
+a:visited{
+    color: black;
 }
 nav {
     position: relative;
