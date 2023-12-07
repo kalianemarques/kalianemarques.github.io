@@ -1,0 +1,39 @@
+body{
+    max-width: 1000px; /* Define a largura máxima desejada */
+    margin: auto; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+li{
+    background-color: pink;
+    display: inline-block;
+    padding-inline: 50px;
+    font-size: x-large;
+    transition: background-color 0.3s ease; 
+
+}
+li:hover{
+    border: 1px solid;
+    display: inline-block;
+    background-color: rgb(245, 164, 245);
+}
+a:link{
+    text-decoration: none;
+    display: inline;
+}
+nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    
+}
+.sem-icone {
+    list-style-type: none;
+}
