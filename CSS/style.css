@@ -7,6 +7,9 @@ body{
     background-size: cover; /* Ajusta o tamanho da imagem ao tamanho do body */
    
 }
+header{
+    background-color: pink;
+}
 h1{
     text-align: center;
     color: rgb(251, 202, 111);
@@ -22,7 +25,7 @@ li{
 li:hover{
     border: 1px solid;
     display: inline-block;
-    background-color: rgb(245, 164, 245);
+    border-bottom: rgb(245, 164, 245) solid 2px;
 }
 a:link{
     text-decoration: none;
