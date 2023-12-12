@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="CSS/style-forms.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <h2>Ficha de Inscrição</h2>
+        <form action="">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+                
+                <label for="rg">Número de Identidade:</label>
+                <input type="number" name="rg" id="rg" required>
+
+                <label for="orgao-emissor">Orgão Emissor:</label>
+                <input type="text" name="orgao-emissor" id="orgao-emissor" required>
+                
+                <label for="data-emissao">Data de Emissão</label>
+                <input type="date" name="data-emissao" id="data-emissao">
+                
+                <label for="cpf">CPF:</label>
+                <input type="number" name="cpf" id="cpf" required>
+
+                <label for="data-nasc">Data de Nascimento:</label>
+                <input type="date" name="data-nasc" id="data-nasc" required>
+
+                <label for="nacionalidade">Nacionalidade:</label>
+                <input type="text" name="nacionalidade" id="nacionalidade" required>
+
+                <label for="naturalidade">Naturalidade:</label>
+                <input type="text" name="naturalidade" id="naturalidade" required>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="cep">CEP:</label>
+                <input type="number" name="cep" id="cep" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" required>
+
+                <label for="num">Número:</label>
+                <input type="number" name="num" id="num" required>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" name="complemento" id="complemento">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" required>
+            </fieldset>
+            <fieldset>
+                <legend>Contato</legend>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="tel1">Telefone 1:</label>
+                <input type="tel" name="tel1" id="tel1" required>
+
+                <label for="tel2">Telefone 2:</label>
+                <input type="tel" name="tel2" id="tel2">
+            </fieldset>
+            <fieldset>
+                <legend>Escolaridade</legend>
+
+                <label for="escolaridade">Nível de Escolaridade</label>
+                <select name="escolaridade" id="escolaridade" required>
+                    <option value="ensino-medio-incompleto">Ensino Médio Incompleto</option>
+                    <option value="ensino-medio-completo">Ensino Médio Completo</option>
+                    <option value="ensino-superior-incompleto">Superior Incompleto</option>
+                    <option value="ensino-superior-completo">Superior Complemento</option>
+                    <option value="pos-graduacao">Pós-Graduação</option>
+                </select>
+
+            </fieldset>
+        
+            <label for="declara-verdade"><input type="checkbox" name="declara-verdade" id="declara-verdade" required>Declaro que as informações a cima são verdadeiras.</label><br><br>
+                
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Para voltar a página principal clique<a href="index.html"> aqui </a></p>
+    </footer>
+</body>
+</html>
