@@ -80,7 +80,7 @@ button:hover{
     width: 48px;
     height: 48px;
     margin-right: 5px; 
-    background-image: url('https://img.icons8.com/pulsar-color/48/000000/coffee-beans-.png');
+    background-image: url('https://img.icons8.com/pulsar-color/48/grapes.png');
     background-size: cover; 
 }
 .planos article{
@@ -215,8 +215,8 @@ button:hover{
     display: none;
 }
 .icone{
-    width: 20%;
-    height: 45px;
+    width: 15%;
+    height: 50px;
     object-fit: cover;
 }
 .espacamento{
@@ -266,6 +266,9 @@ button:hover{
         display: flex;
         flex-direction: column;
         margin-bottom: 3%;
+    }
+    .icone{
+        width: 40%;
     }
     .mobile{
         display: none;
@@ -323,6 +326,9 @@ button:hover{
         margin-left: 2%;
         margin-right: 2%;
         flex-direction: column;
+    }
+    .icone{
+        width: 40%;
     }
     .mobile{
         display: none;
@@ -410,6 +416,9 @@ button:hover{
     .box{
         margin-left: 2%;
         margin-right: 2%;
+    }
+    .icone{
+        width: 20%;
     }
     .laptop{
         display: flex;
@@ -515,6 +524,9 @@ button:hover{
     .box{
         margin-left: 2%;
         margin-right: 2%;
+    }
+    .icone{
+        width: 15%;
     }
     .laptop{
         display: flex;
@@ -627,6 +639,10 @@ button:hover{
     }
     .mobile{
         display: none;
+    }
+    .icone{
+        width: 10%;
+        height: 80px;
     }
     .espacamento{
         display: 1;
