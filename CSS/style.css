@@ -71,9 +71,9 @@ button:hover{
     border-color: var(--cor-destaque);
     color: var(--cor-background-item);
 }
-/* input:active{
-    border-color: var(--cor-destaque);
-} */
+.banner{
+    padding: 2%;
+}
 .logo::after{
     content: "";
     display: inline-block;
@@ -88,13 +88,14 @@ button:hover{
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     padding: 3%;
-    margin: 1%;
+    margin: 3%;
 }
 .header, .section-footer{
     background-color: var(--cor-destaque);
 }
 .sections-banner p{
     width: 90%;
+    padding: 2%;
 }
 .sections-banner{
     display: flex;
@@ -234,17 +235,15 @@ button:hover{
 /*Responsividade*/
 
 @media screen and (min-width: 426px) and (max-width: 589px){ /*tablet */  
-    .sections-banner .box{
-        margin-top: -3%;
+    .sections-banner img{
+        margin: 0;
     }
     .sections-banner p{
         width: 75%;
-        margin-top: 10%;
     }
     .sections-banner{
         display: flex;
-        flex-direction: row;
-        height: 60vh;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -280,12 +279,8 @@ button:hover{
 }
 
 @media screen and (min-width: 590px) and (max-width: 768px){ /*tablet */  
-    img{
-        width: 65%;
-        height: 65%;   
-    }
-    .sections-banner .box{
-        margin-top: -3%;
+    .sections-banner img{
+        margin: 0;
     }
     .sections-banner p{
         width: 60%;
@@ -293,7 +288,6 @@ button:hover{
     .sections-banner{
         display: flex;
         flex-direction: row;
-        height: 60vh;
         justify-content: center;
         align-items: center;
     }
@@ -352,8 +346,11 @@ button:hover{
         font-size: 85%;
     }
     img{
-        width: 40%;
-        height: 40%;
+        width: 45%;
+        height:45%;
+    }
+    .sections-banner img{
+        margin: 0;
     }
     button{
         width: 20%;
@@ -365,16 +362,12 @@ button:hover{
         margin-top: 10%;
         margin-left: -20%;
     }
-    .sections-banner .box{
-        margin-top: -3%;
-    }
     .section-forms p{
         text-align: center;
     }
     .sections-banner{
         display: flex;
         flex-direction: row;
-        height: 40vh;
         justify-content: center;
         align-items: center;
     }
@@ -466,6 +459,9 @@ button:hover{
         margin-top: -0.15%;
         font-size: 1rem;
     }
+    .sections-banner img{
+        margin: 0;
+    }
     .sections-banner p{
         width: 80%;
         margin-top: 10%;
@@ -477,7 +473,6 @@ button:hover{
     .sections-banner{
         display: flex;
         flex-direction: row;
-        height: 50vh;
         justify-content: center;
         align-items: center;
     }
@@ -496,9 +491,6 @@ button:hover{
     .depoimetos{
         display: flex;
         flex-direction: row;
-    }
-    .sections-banner .box{
-        margin-top: -3%;
     }
     .forms{
         display: flex;
@@ -566,6 +558,9 @@ button:hover{
         width: 35%;
         height: 35%;
     }
+    .sections-banner img{
+        margin: 0;
+    }
     button{
         width: 20%;
         margin-left: 2%;
@@ -584,7 +579,6 @@ button:hover{
     .sections-banner{
         display: flex;
         flex-direction: row;
-        height: 40vh;
         justify-content: center;
         align-items: center;
     }
@@ -627,9 +621,6 @@ button:hover{
     .box{
         margin-left: 2%;
         margin-right: 2%;
-    }
-    .sections-banner .box{
-        margin-top: -3%;
     }
     .laptop{
         display: flex;
