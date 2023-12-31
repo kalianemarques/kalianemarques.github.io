@@ -234,9 +234,6 @@ button:hover{
 /*Responsividade*/
 
 @media screen and (min-width: 426px) and (max-width: 589px){ /*tablet */  
-    h2{
-        text-align: center;
-    }
     .sections-banner .box{
         margin-top: -3%;
     }
@@ -283,9 +280,6 @@ button:hover{
 }
 
 @media screen and (min-width: 590px) and (max-width: 768px){ /*tablet */  
-    h2{
-        text-align: center;
-    }
     img{
         width: 65%;
         height: 65%;   
@@ -353,9 +347,6 @@ button:hover{
     }
     h1{
         padding: 1%;
-    }
-    h2{
-        text-align: center;
     }
     p{
         font-size: 85%;
@@ -450,7 +441,6 @@ button:hover{
         font-size: 2rem;
     }
     h2{
-        text-align: center;
         font-size: 1.5rem;
     }
     h3{
@@ -557,7 +547,6 @@ button:hover{
         font-size: 2rem;
     }
     h2{
-        text-align: center;
         font-size: 1.5rem;
     }
     h3{
