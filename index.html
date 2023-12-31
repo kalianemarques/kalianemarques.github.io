@@ -1,23 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portifolio</title>
+    <meta name="keywords" content="café exclusivo, clube de café, café artesanal, café premium, assinatura de café">
+    <meta name="description" content="Descubra um universo de sabores exclusivos no Clube de Café Especial. Receba mensalmente blends premium, explorando origens, torrefações artesanais e uma experiência sensorial única.">
+    <meta property="og:title" content="SaborSeleto">
+    <meta property="og:description" content="Descubra um universo de sabores exclusivos no Clube de café Sabor Seleto. Receba mensalmente blends premium, explorando origens, torrefações artesanais e uma experiência sensorial única.">
+    <meta property="og:image" content="URL_da_Imagem"><!-- Falta scolher a imagem -->
+    <meta property="og:url" content="http://saborseleto.com.br">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
+    
+    <title>SaborSeleto</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Kaliane Marques</h1>
-        </div>
-        <nav>
-            <ul sem-icone>
-                <li><a href="manualHTML/homepage.html">Manual HTML</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Aulas</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <h1 class="txt-animacao logo">Sabor Seleto</h1>
+        <!-- <div>
+            <h2 class="txt-alternado laptop">Explore o mundo do café: Sua jornada pelos melhores sabores começa aqui!</h2>
+            <h2 class="txt-alternado laptop">Uma experiência sensorial, viaje pelos terroirs e sabores dos Melhores cafés do mundo</h2>
+        </div> -->
     </header>
+    <main>
+        <section class="sections-banner">
+            <div class="box banner">
+                <img src="imagens/produto.png" alt="Imagem de alguns dos produtos oferecidos">
+            </div>
+            <div class="box">
+                <p class="espacamento">Explore sabores exclusivos. Junte-se ao clube de café Sabor Seleto para descobrir blends premium selecionados com cuidado. Receba mensalmente em sua porta uma experiência única e fresca. Adereça seu paladar à qualidade excepcional do café.</p>
+            </div>
+        </section>
+        <section class="section-planos">
+            <h2>Nossos planos</h2>
+            <div class="planos">
+                <article class="box">
+                    <h3>Explorador do Sabor</h3>
+                    <p class="espacamento">Receba uma seleção mensal de dois cafés exclusivos de diferentes regiões do mundo.</p>
+                    <ul class="espacamento">Benefícios:
+                        <li>Amostras cuidadosamente selecionadas</li>
+                        <li>Notas de degustação incluídas</li>
+                        <li>Frete grátis</li>
+                    </ul>
+                    <p>R$59,99/mês</p> 
+                </article>
+                <article class="box">
+                    <h3>Connoisseur do Café</h3>
+                    <p class="espacamento">Desfrute de uma experiência premium com três cafés de edições limitadas por mês.</p>
+                    <ul class="espacamento">Benefícios:
+                        <li>Acesso a cafés raros e de alta qualidade</li>
+                        <li>Brinde exclusivo a cada entrega</li>
+                        <li>Envio expresso gratuito</li>
+                    </ul>
+                    <p>R$99,99/mês</p>
+                </article>
+                <article class="box">
+                    <h3>Café Sob Medida</h3>
+                    <p class="espacamento">Personalize a sua experiência com café. Escolha a quantidade e a frequência das entregas de acordo com suas preferências.</p>
+                    <ul class="espacamento">Benefícios:
+                        <li>Flexibilidade total para personalizar cada entrega</li>
+                        <li>Consultoria especializada de nossos especialistas em café</li>
+                        <li>Descontos exclusivos em compras maiores</li>
+                    </ul>
+                    <p class="espacamento">Preço personalizado de acordo com as escolhas do cliente.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section-vantagens">
+            <h2>Vantagens de adquirir o plano</h2>
+            <div class="vantagens">
+                <article class="box1">
+                    <img src="imagens/amostra.png" alt="Icone de pacote de café"  class="icone">
+                    <div class="box">
+                        <h3>Amostras Exclusivas</h3>
+                         <p class="espacamento mobile"> O clube de cafés especiais oferece sabores premium para os membros explorarem, ampliando o paladar e a apreciação pelo café em uma jornada sensorial.</p>
+                         <p class="espacamento laptop"> Oferecendo uma ampla variedade de amostras de cafés especiais, o clube permite que os membros explorem um universo diversificado de sabores premium. Isso cria uma jornada de descoberta sensorial, ampliando o paladar e a apreciação pelo café
+                        </p>
+                    </div>
+                </article>
+                <article class="box1">
+                    <img src="imagens/desconto.png" alt="Icone de desconto"  class="icone">
+                    <div  class="box">
+                        <h3>Descontos Exclusivos</h3>
+                        <p class="espacamento mobile">Acesso a descontos especiais em café e acessórios incentiva membros a explorar novos blends, ampliando a experiência no ritual do café.</p>
+                        <p class="espacamento laptop">Acesso a descontos especiais em café em grão ou acessórios relacionados ao café não apenas proporciona economia, mas também incentiva os membros a expandirem sua experiência, experimentando novos blends ou acessórios para aprimorar o ritual do café.</p>
+                    </div>
+                </article>
+                <article class="box1">
+                    <img src="imagens/entrega.png" alt="Icone de caminhão de entregas" class="icone">
+                    <div class="box">
+                        <h3>Entregas Periódicas</h3>
+                        <p class="espacamento mobile">Receber cafés exclusivos mensalmente traz uma experiência única e conveniente de descoberta de novos sabores.</p>
+                        <p class="espacamento laptop">Receber entregas mensais ou personalizadas com cafés exclusivos oferece conveniência e antecipa a empolgação de descobrir e saborear novos grãos cuidadosamente selecionados, transformando a rotina em uma experiência aguardada e única.</p>
+                    </div>
+                </article>    
+            </div>    
+        </section>
+        <section class="section-variedades">
+            <h2>Variedade de Cafés Exclusivos</h2>
+            <div class="variedades">
+                <article class="box1">
+                    <img src="imagens/origem.png" alt="Icone de globo terrestre" class="icone">
+                    <div class="box">
+                        <h3>Origens e Terroirs Únicos</h3>
+                        <p class="espacamento mobile">Explore cafés exclusivos de diversas regiões, como Brasil, Etiópia e Colômbia, cada um proporcionando uma experiência de sabor única.</p>
+                        <p class="espacamento laptop">Descubra uma gama exclusiva de cafés provenientes de diversas regiões do mundo. Explore os terroirs do Brasil, Etiópia, Colômbia e mais, cada um oferecendo uma experiência de sabor única.</p>
+                    </div>
+                </article>
+                <article class="box1">
+                    <img src="imagens/graos.png" alt="Icone de grãos de café" class="icone">
+                    <div class="box">
+                        <h3>Processos de Torrefação Artesanal</h3>
+                        <p class="espacamento mobile">Os grãos são torrados artesanalmente, preservando suas características únicas em diferentes perfis de torra.</p>
+                        <p class="espacamento laptop">Nossos grãos passam por um processo meticuloso de torrefação artesanal. Dos perfis de torra claros e delicados aos mais intensos e robustos, cada café é cuidadosamente tratado para preservar suas características únicas.</p>
+                    </div>
+                </article>
+                <article class="box1">
+                    <img src="imagens/xicara.png" alt="Icone de xicara de café" class="icone">
+                    <div class="box">
+                        <h3>Aromas e Sabores Distintos</h3>
+                        <p class="espacamento mobile">Descubra uma variedade de sabores, desde florais a frutados e achocolatados, em cafés suaves e intensos, oferecendo uma experiência sensorial diversificada.</p>
+                        <p class="espacamento laptop">De aromas florais a notas frutadas e achocolatadas, mergulhe em uma variedade de sabores surpreendentes. Experimente desde cafés mais suaves e equilibrados até os mais intensos e complexos, oferecendo uma experiência sensorial diversificada.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section-depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="depoimetos">
+                <article class="box">
+                    <h3>Maria, Apaixonada por Café</h3>
+                    <p class="espacamento">"Sou apaixonada por café e aderir ao Sabor Seleto foi uma das melhores decisões que já tomei. Cada entrega é uma surpresa deliciosa, com cafés de alta qualidade e sabores incríveis. A experiência sensorial que esses cafés proporcionam é simplesmente única! Recomendo a todos os amantes de café."</p>
+                </article>
+                <article class="box" id="depoimento2">
+                    <h3>João, Entusiasta da Torra Artesanal</h3>
+                    <p class="espacamento">"Como entusiasta da torra artesanal, encontrar o Sabor Seleto foi uma verdadeira descoberta. Os grãos que recebo mensalmente são excepcionais, com perfis de sabor únicos e uma frescura inigualável. Além disso, os materiais educativos têm ampliado meu conhecimento sobre o mundo do café. Uma experiência completa e enriquecedora."</p>
+                </article>
+                <article class="box" id="depoimento3">
+                    <h3>Ana, Buscando Novos Sabores</h3>
+                    <p class="espacamento">"Estou sempre em busca de novos sabores de café e o Sabor Seleto superou todas as minhas expectativas. As amostras exclusivas me permitiram explorar uma gama de sabores que nunca imaginei. Cada entrega é uma viagem sensorial, com cafés surpreendentes e de alta qualidade. É incrível como uma xícara de café pode contar uma história!"</p>
+                </article>
+            </div>
+        </section>
+        <section class="section-forms">
+            <h2>Cadastre-se para ficar por dentro das novidades!</h2>
+            <p>Inscreva-se na nossa newsletter!</p>
+            <form action="" class="forms">
+                <label for="nome"><b>Nome</b></label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="email" id="email" required>
+                <button type="submit">Quero me cadastrar!</button>
+            </form>
+        </section>
+    </main>
+    <footer class="section-footer">
+        <div class="footer">
+            <section>
+                <h2 class="logo">Sabor seleto</h2>
+            </section>
+            <section class="contatos">
+                <h2>Contato</h2>
+                <p>Telefone: (84) 3664-8710</p>
+                <p>Whatsapp: (84) 99782-3304</p>
+                <p>E-mail: contato@saborseleto.com.br</p>
+            </section>
+            <section class="horarrios">
+                <h2>Horário de Funcionamento</h2>
+                <p>Segunda a Sexta: 8 - 18h</p>
+                <p>Sábado: 9 - 14h</p>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
