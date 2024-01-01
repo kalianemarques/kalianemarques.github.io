@@ -25,17 +25,11 @@ h1, h2{
 h3{
     color: var(--cor-secundaria);
     margin-bottom: -1%;
+    text-align: center;
 }
 p{
     text-align: justify;
     font-size: 85%;
-}
-img{
-    margin-top: 8%;
-    width: 75%;
-    height: 75%;
-    display: flex;
-    border-radius: 15px;
 }
 ul{
     font-size: 85%;
@@ -71,9 +65,6 @@ button:hover{
     border-color: var(--cor-destaque);
     color: var(--cor-background-item);
 }
-.banner{
-    padding: 2%;
-}
 .logo::after{
     content: "";
     display: inline-block;
@@ -82,6 +73,16 @@ button:hover{
     margin-right: 5px; 
     background-image: url('https://img.icons8.com/pulsar-color/48/grapes.png');
     background-size: cover; 
+}
+.banner{
+    padding: 2%;
+}
+.imagem-banner{
+    margin-top: 8%;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    border-radius: 15px;
 }
 .planos article{
     border: solid var(--cor-destaque);
@@ -207,6 +208,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex: 1;
 }
 #depoimento2, #depoimento3{
     display: none;
@@ -348,14 +350,9 @@ button:hover{
     h1{
         padding: 1%;
     }
-    p{
-        font-size: 85%;
-    }
-    img{
+    .imagem-banner{
         width: 45%;
         height:45%;
-    }
-    .sections-banner img{
         margin: 0;
     }
     button{
@@ -365,7 +362,6 @@ button:hover{
     }
     .sections-banner p{
         width: 80%;
-        margin-top: 10%;
         margin-left: -20%;
     }
     .section-forms p{
@@ -426,9 +422,6 @@ button:hover{
     .mobile{
         display: none;
     } 
-    .espacamento{
-        display: 1;
-    }
     #depoimento2, #depoimento3{
         display: flex;
     }
@@ -451,10 +444,6 @@ button:hover{
     p{
         font-size: 90%;
     }
-    img{
-        width: 35%;
-        height: 35%;
-    }
     label{
         font-size: 1rem;
     }
@@ -468,12 +457,11 @@ button:hover{
         margin-top: -0.15%;
         font-size: 1rem;
     }
-    .sections-banner img{
+    .imagem-banner{
         margin: 0;
     }
     .sections-banner p{
         width: 80%;
-        margin-top: 10%;
         margin-left: -20%;
     }
     .section-forms p{
@@ -534,9 +522,6 @@ button:hover{
     .mobile{
         display: none;
     }
-    .espacamento{
-        display: 1;
-    }
     #depoimento2, #depoimento3{
         display: flex;
     }
@@ -566,11 +551,9 @@ button:hover{
     .section-forms p{
         text-align: center;
     }
-    img{
+    .imagem-banner{
         width: 35%;
         height: 35%;
-    }
-    .sections-banner img{
         margin: 0;
     }
     button{
@@ -643,9 +626,6 @@ button:hover{
     .icone{
         width: 10%;
         height: 80px;
-    }
-    .espacamento{
-        display: 1;
     }
     #depoimento2, #depoimento3{
         display: flex;
