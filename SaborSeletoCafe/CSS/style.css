@@ -1,0 +1,633 @@
+:root{
+    --cor-primaria: #798C32;
+    --cor-secundaria:#332d0e;
+    --cor-destaque:#59310E;
+    --cor-background1: #E1D4C4;
+    --cor-background2: #E1D4C4;
+    --cor-background-item:#FBFACD;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+h1, h2{
+    color: var(--cor-primaria);
+    text-align: center;
+}
+h3{
+    color: var(--cor-secundaria);
+    margin-bottom: -1%;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    font-size: 85%;
+}
+ul{
+    font-size: 85%;
+    width: 90%;
+}
+label{
+    margin: 0.5%;
+    color: var(--cor-primaria);
+    font-size: 85%;
+}
+input{
+    border-radius: 15px;
+    border: solid var(--cor-background-item) 2px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: var(--cor-background-item);
+}
+input:hover{
+    border-color: var(--cor-destaque);
+}
+button{
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--cor-background-item);
+    color: var(--cor-primaria);
+    background-color: var(--cor-background-item);
+    margin-top: 3%;
+}
+button:hover{
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    color: var(--cor-background-item);
+}
+.logo::after{
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url('https://img.icons8.com/pulsar-color/48/000000/coffee-beans-.png');
+    background-size: cover; 
+}
+.logo h2{
+    text-align: justify;
+}
+.banner{
+    padding: 2%;
+}
+.imagem-banner{
+    margin-top: 8%;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    border-radius: 15px;
+}
+.planos article{
+    border: solid var(--cor-destaque);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+    padding: 3%;
+    margin: 3%;
+}
+.header, .section-footer{
+    background-color: var(--cor-destaque);
+}
+.sections-banner p{
+    width: 90%;
+    padding: 2%;
+}
+.sections-banner{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background-color: var(--cor-background2);
+}
+.section-planos, .section-variedades, .section-vantagens, .section-depoimentos{
+    background-color: var(--cor-background2);
+}
+.planos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.section-planos h2{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.vantagens{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.section-vantagens h2{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.variedades{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.section-variedades h2{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.depoimetos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.section-depoimentos h2{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 3%;
+}
+.forms-entradas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.section-forms{
+    background-color: var(--cor-background2);
+    margin: 0;
+}
+.section-forms p {
+    margin-left: 1%;
+    text-align: center;
+}
+.section-forms h2{
+    margin-top: 3%;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: var(--cor-background-item);
+}
+.footer section{
+    margin-right: 2%;
+    margin-left: 2%;
+    flex: 1;
+}
+.footer h2{
+    text-align: left;
+}
+.box{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+}
+.box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+#depoimento2, #depoimento3{
+    display: none;
+}
+.laptop{
+    display: none;
+}
+.icone{
+    width: 15%;
+    height: 50px;
+    object-fit: cover;
+}
+.espacamento{
+    line-height: 1.5;
+}
+/*Animação*/
+@keyframes txt-que-aparece {
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.txt-animacao{
+    animation: txt-que-aparece 3s normal;
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 426px) and (max-width: 589px){ /*tablet */  
+    .sections-banner img{
+        margin: 0;
+    }
+    .sections-banner p{
+        width: 75%;
+    }
+    .sections-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-forms p{
+        text-align: center;
+    }
+    .vantagens{
+        display: flex;
+        flex-direction: column;
+    }
+    .variedades{
+        display: flex;
+        flex-direction: column;
+    }
+    .depoimetos{
+        display: flex;
+        flex-direction: column;
+    }
+    .forms-entradas{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+    .icone{
+        width: 10%;
+    }
+    .mobile{
+        display: none;
+    }
+    .laptop{
+        display: flex;
+    }
+    #depoimento2, #depoimento3{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 590px) and (max-width: 768px){ /*tablet */  
+    .sections-banner img{
+        margin: 0;
+    }
+    .sections-banner p{
+        width: 60%;
+    }
+    .sections-banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-forms p{
+        text-align: center;
+    }
+    .planos{
+        display: flex;
+        flex-direction: row;        
+    }
+    .vantagens{
+        display: flex;
+        flex-direction: row;
+    }
+    .variedades{
+        display: flex;
+        flex-direction: row;
+    }
+    .depoimetos{
+        display: flex;
+        flex-direction: row;
+    }
+    .forms-entradas{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        margin-left: 2%;
+        margin-right: 2%;
+        flex-direction: column;
+    }
+    .icone{
+        width: 30%;
+    }
+    .mobile{
+        display: none;
+    }
+    .laptop{
+        display: flex;
+    }
+    #depoimento2, #depoimento3{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){ /*laptop*/ 
+    body {
+        flex-direction: column;
+    }
+    h1{
+        padding: 1%;
+    }
+    .imagem-banner{
+        width: 50%;
+        margin: 0;
+    }
+    button{
+        width: 20%;
+        margin-left: 2%;
+        margin-top: -0.15%;
+    }
+    .sections-banner p{
+        width: 80%;
+        margin-left: -20%;
+    }
+    .section-forms p{
+        text-align: center;
+    }
+    .sections-banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .planos{
+        display: flex;
+        flex-direction: row;        
+    }
+    .vantagens{
+        display: flex;
+        flex-direction: row;
+    }
+    .variedades{
+        display: flex;
+        flex-direction: row;
+    }
+    .depoimetos{
+        display: flex;
+        flex-direction: row;
+    }
+    .forms{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .forms-entradas{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        margin-left: 2%;
+        margin-right: 2%;
+        flex-direction: column;
+    }
+    .box{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .icone{
+        width: 20%;
+    }
+    .laptop{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    } 
+    #depoimento2, #depoimento3{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){ /*laptop L*/ 
+    body {
+        flex-direction: column;
+    }
+    h1{
+        padding: 1%;
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 90%;
+    }
+    label{
+        font-size: 1rem;
+    }
+    input{
+        width: 20%;
+        font-size: 1rem;
+    }
+    button{
+        width: 25%;
+        margin-left: 2%;
+        margin-top: -0.15%;
+        font-size: 1rem;
+    }
+    .imagem-banner{
+        margin: 0;
+        width: 50%;
+    }
+    .sections-banner p{
+        width: 80%;
+        margin-left: -20%;
+    }
+    .section-forms p{
+        text-align: center;
+    }
+    .sections-banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .planos{
+        display: flex;
+        flex-direction: row;        
+    }
+    .vantagens{
+        display: flex;
+        flex-direction: row;
+    }
+    .variedades{
+        display: flex;
+        flex-direction: row;
+    }
+    .depoimetos{
+        display: flex;
+        flex-direction: row;
+    }
+    .forms{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .forms-entradas{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        margin-left: 2%;
+        margin-right: 2%;
+        flex-direction: column;
+    }
+    .box{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .icone{
+        width: 15%;
+    }
+    .laptop{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    }
+    #depoimento2, #depoimento3{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px){ /*4K*/ 
+    body {
+        flex-direction: column;
+    }
+    h1{
+        padding: 1%;
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 95%;
+    }
+    .sections-banner p{
+        width: 80%;
+        margin-left: -20%;
+    }
+    .section-forms p{
+        text-align: center;
+    }
+    .imagem-banner{
+        width: 50%;
+        margin: 0;
+    }
+    button{
+        width: 20%;
+        margin-left: 2%;
+        margin-top: -0.15%;
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+    label{
+        font-size: 1rem;
+    }
+    input{
+        width: 20%;
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+    .sections-banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .planos{
+        display: flex;
+        flex-direction: row;        
+    }
+    .vantagens{
+        display: flex;
+        flex-direction: row;
+    }
+    .variedades{
+        display: flex;
+        flex-direction: row;
+    }
+    .depoimetos{
+        display: flex;
+        flex-direction: row;
+    }
+    .forms{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .forms-entradas{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        margin-left: 2%;
+        margin-right: 2%;
+        flex-direction: column;
+    }
+    .box{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .laptop{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    }
+    .icone{
+        width: 10%;
+        height: 80px;
+    }
+    #depoimento2, #depoimento3{
+        display: flex;
+    }
+}
