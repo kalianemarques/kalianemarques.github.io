@@ -192,6 +192,7 @@ button:hover{
 .footer section{
     margin-right: 2%;
     margin-left: 2%;
+    flex: 1;
 }
 .footer h2{
     text-align: left;
