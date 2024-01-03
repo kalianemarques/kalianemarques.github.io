@@ -624,8 +624,8 @@ button:hover{
         display: none;
     }
     .icone{
-        width: 10%;
-        height: 80px;
+        width: 12%;
+        height: 60px;
     }
     #depoimento2, #depoimento3{
         display: flex;
